@@ -4,7 +4,7 @@ components used :
   LDR
   IR
   LED
-  ESP32
+  ESP8266
   BUZZER 
 PROGRAM :
 #define IR1 17
