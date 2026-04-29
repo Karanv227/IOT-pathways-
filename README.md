@@ -75,32 +75,34 @@ void loop() {
 
   // HUMAN detected
   if (count == 1) {
-    if (ldrValue > 2000) {  // DARK
+    if (ldrValue > 2000) {  // DARK மட்டும் green
       digitalWrite(G1, HIGH);
       digitalWrite(G2, HIGH);
       digitalWrite(G3, HIGH);
     }
   }
 
-  // VEHICLE detected
+  // VEHICLE detected (UPDATED PART)
   else if (count >= 2) {
+
     digitalWrite(BUZZER, HIGH);
 
-    if (ldrValue > 2000) {  // DARK
-      digitalWrite(R1, HIGH);
-      digitalWrite(R2, HIGH);
-      digitalWrite(R3, HIGH);
-    }
+    // 🔥 CHANGE: LDR condition remove pannom
+    digitalWrite(R1, HIGH);
+    digitalWrite(R2, HIGH);
+    digitalWrite(R3, HIGH);
   }
 
-  // =========================
-  // EXTRA LED (FINAL FIX)
-  // =========================
-
+  // EXTRA LED (same as before)
   if (ldrValue < 2000) {
-    // Bright → DIM
-    analogWrite(EXTRA_LED, 80);   // dim light
+    analogWrite(EXTRA_LED, 80);   // dim
   } 
+  else {
+    analogWrite(EXTRA_LED, 255);  // bright
+  }
+
+  delay(100);
+}
   else {
     // Dark → FULL BRIGHT
     analogWrite(EXTRA_LED, 255);
