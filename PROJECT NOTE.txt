@@ -11,11 +11,21 @@ Adaptive Smart Footpath Protection System Using IoT
 
 Problem Statement : 
 
-In many real-world applications such as street lighting and indoor illumination, lights remain ON at fixed brightness regardless of surrounding light conditions. This leads to unnecessary power consumption and inefficient energy usage, especially during daytime or well-lit environments. There is a need for an automatic system that can adjust light intensity based on ambient light levels without manual intervention.
+In many real-world applications such as street lighting and indoor illumination, 
+lights remain ON at fixed brightness regardless of surrounding light conditions.
+This leads to unnecessary power consumption and inefficient energy usage,
+especially during daytime or well-lit environments. There is a need for
+an automatic system that can adjust light intensity based on ambient light
+levels without manual intervention.
 
 Solution :
 
-This project implements an automatic LED brightness control system using an LDR and BC547 transistor, powered through an ESP8266. The LDR senses ambient light intensity and controls the base current of the BC547 transistor. Based on light conditions, the transistor regulates the current flowing through the LED, automatically increasing brightness in darkness and reducing it in bright conditions. This hardware-based solution is simple, reliable, and energy efficient.
+This project implements an automatic LED brightness control system using an LDR
+and BC547 transistor, powered through an ESP8266. The LDR senses ambient light 
+intensity and controls the base current of the BC547 transistor. Based on light
+conditions, the transistor regulates the current flowing through the LED, 
+automatically increasing brightness in darkness and reducing it in bright
+conditions. This hardware-based solution is simple, reliable, and energy efficient.
 
 Tech Stack / Components :
 
