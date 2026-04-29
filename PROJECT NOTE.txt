@@ -4,7 +4,7 @@ Team Name :
 
 Project Title:
 
-Adaptive Smart Footpath Protection System Using IoT
+Adaptive Smart Footpath Protection System 
 
 
 						PROJECT NOTE 
